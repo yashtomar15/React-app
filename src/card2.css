@@ -1,0 +1,80 @@
+.mainbox{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width:400px;
+}
+.joinus{
+    border:1px solid;
+    border-radius: 50px;
+    width:150px;
+    height:35px;margin-bottom:10px;
+     background-color: blue;
+}
+.joinus>p{
+   margin-left:20px;
+    color:white;
+}.login>p{
+    margin-left:20px;
+     color:white;
+ }.home>p{
+    margin-left:20px;
+     color:white;
+ }.search>p{
+    margin-left:20px;
+     color:white;
+ }.contact>p{
+    margin-left:20px;
+     color:white;
+ }.download>p{
+    margin-left:20px;
+     color:white;
+ }.setting>p{
+    margin-left:20px;
+     color:white;
+ }.help>p{
+    margin-left:20px;
+     color:white;
+ }
+.login{
+    border:1px solid;
+    border-radius: 50px;
+    width:150px;
+    height:35px;margin-bottom:10px;
+     background-color:yellow;
+}.home{
+    border:1px solid;
+    border-radius: 50px;
+    width:150px;
+    height:35px;margin-bottom:10px;
+     background-color: pink;
+}.search{
+    border:1px solid;
+    border-radius: 50px;
+    width:150px;
+    height:35px;margin-bottom:10px;
+     background-color: green;
+}.help{
+    border:1px solid;
+    border-radius: 50px;
+    width:150px;
+    height:35px;margin-bottom:10px;
+     background-color: violet;
+}.download{
+    border:1px solid;
+    border-radius: 50px;
+    width:150px;
+    height:35px;margin-bottom:10px;
+     background-color: burlywood;
+}.setting{
+    border:1px solid;
+    border-radius: 50px;
+    width:150px;
+    height:35px;margin-bottom:10px;
+     background-color: lightblue;
+}.contact{
+    border:1px solid;
+    border-radius: 50px;
+    width:150px;
+    height:35px;margin-bottom:10px;
+     background-color: red;
+}
