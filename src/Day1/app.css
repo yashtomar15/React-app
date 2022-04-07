@@ -1,0 +1,12 @@
+.buttonsName{
+    border:0px solid;
+    border-radius: 50px;
+    width:150px;
+    height:35px;margin-bottom:10px;
+     /* background-color: blue; */
+}
+.buttonsboard{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    width:400px;
+}
