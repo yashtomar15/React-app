@@ -4,11 +4,12 @@ import ReactDOM from 'react-dom';
 // import {Part1} from './part1.js';
 // import Button from './Day2/button.jsx';
 // import {App} from './App.js';
-import {Counter} from './Day2assign/counter';
+// import {Counter} from './Day2assign/counter';
+import {SimpleTodo} from './Day2assign/Simpletodo/Todo';
 
 
 ReactDOM.render(
- <Counter value={0} />,
+ <SimpleTodo />,
   document.getElementById('root')
 );
 

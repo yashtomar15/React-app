@@ -1,0 +1,36 @@
+.todoapp{
+    border:1px solid;
+     width:50%;
+     margin:auto;
+     height:500px;
+     background-color: aqua;
+}
+.inputbox{
+    border-radius:50px;
+    border:0px;
+    width:70%;
+    height:50px;
+    margin-bottom:10px;
+    /* margin-right:5px; */
+}
+.tasks>div{
+    border:1px solid;
+    border-radius: 50px;
+    width:80%;
+    height:60px;
+    margin-bottom:10px;
+}
+
+.tasks>div>h1{
+    padding-left:15px;
+}
+.buttonadd{
+    background-color:white;
+    border-radius:10px;
+    border:0px;
+    width:60px;
+    height:50px;
+    padding-bottom:10px;
+    font-size: 30px;
+    margin-left:10px ;
+}
