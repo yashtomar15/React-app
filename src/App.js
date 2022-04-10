@@ -1,19 +1,18 @@
 import React from 'react';
-import Button from './Day2/button.jsx';
-import {Input} from './Day2/input.jsx';
-import  Employee  from './Day2/employes.jsx';
-import {Todo} from './Day2/todo.jsx';
+// import Reactapp from './Reactmenu.js'
+// import {Part1} from './part1.js';
+// import Button from './Day2/button.jsx';
+// import {App} from './App.js';
+// import {Counter} from './Day2assign/counter';
+// import {SimpleTodo} from './Day2assign/Simpletodo/Todo';
+// import {ButtonsBoard} from './Day1/App';
+// import {TodoList} from './Day3/todolist.jsx';
+import { CardDetails } from './Day3/carddetails';
+
 export const App =()=>{
     return (
         <>
-        <div className='App'>
-        <h1 className='studentfrom'>Student Form</h1>
-
-        {/* <Button /> */}
-        {/* <Todo /> */}
-        <Employee />
-    
-        </div>
+<CardDetails />
         </>
     )
 }

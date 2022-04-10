@@ -1,16 +1,7 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-// import Reactapp from './Reactmenu.js'
-// import {Part1} from './part1.js';
-// import Button from './Day2/button.jsx';
-// import {App} from './App.js';
-// import {Counter} from './Day2assign/counter';
-// import {SimpleTodo} from './Day2assign/Simpletodo/Todo';
-import {ButtonsBoard} from './Day1/App';
+import {createRoot} from 'react-dom/client'
+import {App} from './App.js'
  
-
-ReactDOM.render(
- <ButtonsBoard />,
-  document.getElementById('root')
-);
-
+var container=document.getElementById("root");
+var root=createRoot(container);
+root.render(<App />);
