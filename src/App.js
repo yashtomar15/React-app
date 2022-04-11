@@ -7,12 +7,13 @@ import React from 'react';
 // import {SimpleTodo} from './Day2assign/Simpletodo/Todo';
 // import {ButtonsBoard} from './Day1/App';
 // import {TodoList} from './Day3/todolist.jsx';
-import { CardDetails } from './Day3/carddetails';
+// import { CardDetails } from './Day3/carddetails';
+import { RestaurantDetails } from './Day3/restaurant/ResturantDetails';
 
 export const App =()=>{
     return (
         <>
-<CardDetails />
+<RestaurantDetails />
         </>
     )
 }

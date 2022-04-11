@@ -1,0 +1,46 @@
+.addrestroform>input{
+width:200px;
+margin-bottom:10px;
+}
+.allcontent{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.cardbox{
+    width:500px;
+    border:0px solid;
+ margin-bottom:20px;
+ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+ border-radius: 10px;
+}
+.rating{
+    background-color: #4d9644;
+    border:0px;
+    width:40px;
+    height:20px;
+    color:white;
+}
+.restroimg>img{
+    border-radius:10px;
+    margin-top:20px;
+}
+.ratingsection{
+    margin-top:20px;
+    margin-left:70px;
+}
+.order_area{
+    display:flex;
+}
+.emptydiv{
+    border:1px solid;
+    width:400px;
+    height:25px;
+    color:grey;
+}
+.orderbtn{
+    width:100px;
+    height:27px;
+    /* border:1px */
+  border:1px solid grey;
+  color:  #4d9644;
+}
