@@ -8,12 +8,13 @@ import React from 'react';
 // import {ButtonsBoard} from './Day1/App';
 // import {TodoList} from './Day3/todolist.jsx';
 // import { CardDetails } from './Day3/carddetails';
-import { RestaurantDetails } from './Day3/restaurant/ResturantDetails';
+// import { RestaurantDetails } from './Day3/restaurant/ResturantDetails';
+import {Todo} from './Day4/todo'
 
 export const App =()=>{
     return (
         <>
-<RestaurantDetails />
+<Todo />
         </>
     )
 }
