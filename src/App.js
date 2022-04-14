@@ -9,12 +9,15 @@ import React from 'react';
 // import {TodoList} from './Day3/todolist.jsx';
 // import { CardDetails } from './Day3/carddetails';
 // import { RestaurantDetails } from './Day3/restaurant/ResturantDetails';
-import {Todo} from './Day4/todo'
+// import {Todo} from './Day4/todo'
+// import {Counter} from './Day6/COunter'
+// import {Form} from './Day6/FormApp/form'
+import { ReactForm } from './Day6/Assignment/Reactform/Reactform';
 
 export const App =()=>{
     return (
         <>
-<Todo />
+<ReactForm />
         </>
     )
 }
