@@ -1,73 +1,64 @@
 import React, { useState ,useEffect} from 'react';
+import {Form} from './Form';
+import {Display} from './Display';
+import './form.css'
 
 export const ReactForm=()=>{
-    const [formdata,setFormdata]=useState({});
-    const [database,setDatabase]=useState(false);
+// const [userdata,setUserdata]=useState({})
+const [getdata,setGetdata]=useState([]);
 useEffect(()=>{
+    displaydata();
+ },[])
+ function displaydata(){
+     fetch('http://localhost:3000/data')
+     .then(res=>res.json())
+     .then(data=>setGetdata(data)) 
+     .catch(error=>console.log(error))
 
-      async function Postdata(){
-          try{
-            const response=await fetch('http://localhost:3000/data',{
-                method:'POST',
-                headers:{'Content-Type':'application/json','Accept': 'application/json',},
-                body:JSON.stringify({formdata})
-            })
-           const data=await response.json();
-           console.log(data); 
-          }catch(error){
-                console.log(error);
-          }
+ }
+ function Postdata(formdata){
+    // userdata
+      const postrequest={
+        method:'POST',
+        headers:{'Content-Type':'application/json'},
+        body:JSON.stringify(formdata)
     }
-    Postdata();
- },[database])
-
- 
-    const handleChange=(e)=>{
-        const inputname=e.target.name;
-        setFormdata({...formdata,[inputname]:e.target.value});
-    }
-const handleSubmit=(e)=>{
-    e.preventDefault();
-    setDatabase({...database,formdata});
+      fetch('http://localhost:3000/data',postrequest)
+      .then(res=> res.json())
+        .then(data=>displaydata())
+        // .then(data=>console.log(data))
+        .catch(error=>console.log(error))
 }
 
-
-    return(
-        <>
-        <form onSubmit={handleSubmit}>
-        <div>
-            <label> Name</label>
-            <input type="text" name="name" placeholder='write your name'     onChange={handleChange}       />
-        </div>
-        <div> 
-            <label> Age</label>
-            <input type="number" name="age" placeholder='write your age'      onChange={handleChange}    />
-        </div>
-        <div>
-            <label>Address</label>
-            <input type="text" name="address" placeholder='write your address'  onChange={handleChange}  />
-        </div>
-        <div>
-            <label>Department</label>
-            <select>
-                <option>Software Enginner</option>
-                <option>Goverment</option>
-                <option>Doctor</option>
-                <option>Advocate</option>
-            </select>
-        </div>
-        <div>
-            <label>Salary</label>
-            <input type="number" name="salary" placeholder='write your salary'   onChange={handleChange}  />
-        </div>
-        <div>
-            <label> Martial status</label>
-            <input type="checkbox" name="martialstatus" placeholder='write your status'   onChange={handleChange}  />
-        </div>
-        <div>
-            <input type='submit' name='submit' />
-        </div>
-        </form>
-        </>
-    )
+ const onSubmit=(formdata)=>{
+    Postdata(formdata);
+ }
+ return(<>
+     <h1>Employee Details</h1>
+     <div className='container'>
+     <div>
+         <table className='employees'>
+         <thead><tr>
+             <th>NAME</th>
+             <th>AGE</th>
+             <th>ADDRESS</th>
+             <th>SALARY</th>
+             <th>DEPARTMENT</th>
+             <th>MARTIAL STATUS</th>
+             </tr></thead>
+         <tbody>
+         {  getdata.map((elm)=>
+    <Display key={elm.id} {...elm} />
+)} 
+</tbody>
+</table>
+     </div>
+     <div>
+     <Form onSubmit={onSubmit}/>
+     </div>
+     </div>
+     </>
+ )
+   
+     
 }

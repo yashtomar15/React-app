@@ -36,10 +36,10 @@ console.log(query);
     <div className={styles.container} >
         <div className="savedtodo">
     {data &&
-      data.map((elm,index)=>
+      data.map((elm,index)=>{
         <Display key={elm.id} {...elm} index={index} />
         // console.log(elm)
-         )
+       } )
 } </div>
 <div className="storetodo">
 <StoreTodo storedata={storeData} />
