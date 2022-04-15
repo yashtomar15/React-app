@@ -5,7 +5,7 @@ export const Form=({onSubmit})=>{
     
      const handleChange=(e)=>{
         const inputname=e.target.name;
-        if (inputname=="martialstatus"){
+        if (inputname==="martialstatus"){
            if(e.target.checked===true){
                 setFormdata({...formdata,[inputname]:'Yes'})
            }else{

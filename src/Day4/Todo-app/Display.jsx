@@ -1,9 +1,10 @@
+import React from 'react'
 
-export const Display =({index,title})=>{
+export const Display =({title,status})=>{
 return (
-    <>
-    <h4>{index+1}-{title}</h4>
-    {console.log(title)}
-    </>
+   <tr>
+   <td>{title}</td>
+   <td>UnComleted</td>
+   </tr>
 )
 }
