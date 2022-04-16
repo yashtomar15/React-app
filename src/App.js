@@ -13,11 +13,13 @@ import React from 'react';
 // import {Counter} from './Day6/COunter'
 // import {Form} from './Day6/FormApp/form'
 // import { ReactForm } from './Day6/Assignment/Reactform/Reactform';
-import {Timer} from './Day7/Timer/Timer'
+// import {Timer} from './Day7/Timer/Timer'
+import {GoogleTimer} from './Day8/GoogleTimer.jsx'
 export const App =()=>{
     return (
         <>
-<Timer />
+        
+<GoogleTimer />
         </>
     )
 }
