@@ -1,0 +1,18 @@
+.timerInput{
+    /* border:1px; */
+    width:150px;
+    height:50px;
+}
+.timinglive{
+font-size:20px;
+font-weight:800;
+
+/* margin-bottom: 20px; */
+}
+.stoplive{
+    font-size:25px;
+    font-weight:800;
+    
+    /* margin-bottom: 20px; */
+    }
+    

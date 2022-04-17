@@ -1,5 +1,5 @@
 import React, { useRef} from 'react'
-
+import styles from './timer.module.css'
 export const Timing =({Timelimit})=>{
     const refTiming=useRef({});
     let timestr;
@@ -11,11 +11,10 @@ export const Timing =({Timelimit})=>{
                 secs:Number(timestr.substr(4,2))}
                 Timelimit(refTiming.current);
          }
-// setTiming(e.target.value);
     }
     return(
         <>
-               <input type="number" name="timing" onChange={handleChange} placeholder="00h 00m 00s"  /> 
+               <input className={styles.timerInput} type="number" name="timing" onChange={handleChange} placeholder="00h 00m 00s"  /> 
         </>
     )
 }
