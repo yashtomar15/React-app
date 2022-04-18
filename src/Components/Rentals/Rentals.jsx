@@ -22,7 +22,7 @@ const refD=useRef();
   getdata()
   // },[])
 
-
+var Data=refD.current;
  
   return (
     <div className="rentalContainer">
@@ -52,7 +52,7 @@ const refD=useRef();
           </tr>
         </thead>
         <tbody>
-          {[].map((house, index) => {
+          {Data.map((house, index) => {
             return (
               <tr key={house.id} className="houseDetails">
                 <td className="houseId">{house.id}</td>
