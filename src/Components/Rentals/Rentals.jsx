@@ -3,16 +3,16 @@ import {useRef} from 'react';
 import {useState} from 'react';
 
 export const Rentals = () => {
-// const [housedata,setHousedata]=useState();
+const [housedata,setHousedata]=useState();
 const refD=useRef();
-// useEffect=(()=>{
+useEffect=(()=>{
 
   const getdata=async ()=>{
     try{
       var res=await fetch("http://localhost:8080/posts");
         var data=await res.json();
-          // setHousedata(data);
-          refD.current=data;
+          setHousedata(data);
+          // refD.current=data;
           console.log(data);
       }
       catch(error){
@@ -20,7 +20,7 @@ const refD=useRef();
       }
   }
   getdata()
-  // },[])
+  },[])
 
 var Data=refD.current;
  
@@ -52,7 +52,7 @@ var Data=refD.current;
           </tr>
         </thead>
         <tbody>
-          {Data.map((house, index) => {
+          {housedata.map((house, index) => {
             return (
               <tr key={house.id} className="houseDetails">
                 <td className="houseId">{house.id}</td>
