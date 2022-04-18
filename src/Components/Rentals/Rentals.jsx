@@ -1,6 +1,7 @@
 import "./Rentals.css";
-import {useRef} from 'react';
+import {useEffect} from 'react';
 import {useState} from 'react';
+import {useRef} from 'react';
 
 export const Rentals = () => {
 const [housedata,setHousedata]=useState();
@@ -52,7 +53,7 @@ var Data=refD.current;
           </tr>
         </thead>
         <tbody>
-          {housedata.map((house, index) => {
+          {[].map((house, index) => {
             return (
               <tr key={house.id} className="houseDetails">
                 <td className="houseId">{house.id}</td>
