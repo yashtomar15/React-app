@@ -14,12 +14,12 @@ import React from 'react';
 // import {Form} from './Day6/FormApp/form'
 // import { ReactForm } from './Day6/Assignment/Reactform/Reactform';
 // import {Timer} from './Day7/Timer/Timer'
-// import {GoogleTimer} from './Day8/GoogleTimerFolder/GoogleTimer.jsx'
-import AppRental from './AppRental';
+import {GoogleTimer} from './Day8/GoogleTimerFolder/GoogleTimer.jsx'
 export const App =()=>{
     return (
-        <>   
-<AppRental />
+        <>
+        
+<GoogleTimer />
         </>
     )
 }

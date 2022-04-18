@@ -1,0 +1,24 @@
+{
+  "posts": [
+    {
+      "name": "yash ",
+      "ownerName": "yash",
+      "address": "jdkf",
+      "areaCode": "dffd",
+      "rent": "fd",
+      "bachelor": "Yes",
+      "image": "dff",
+      "id": 7
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
