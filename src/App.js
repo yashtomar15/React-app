@@ -1,4 +1,5 @@
 import React from 'react';
+import './App.css';
 // import Reactapp from './Reactmenu.js'
 // import {Part1} from './part1.js';
 // import Button from './Day2/button.jsx';
@@ -14,12 +15,13 @@ import React from 'react';
 // import {Form} from './Day6/FormApp/form'
 // import { ReactForm } from './Day6/Assignment/Reactform/Reactform';
 // import {Timer} from './Day7/Timer/Timer'
-import {GoogleTimer} from './Day8/GoogleTimerFolder/GoogleTimer.jsx'
+// import {GoogleTimer} from './Day8/GoogleTimerFolder/GoogleTimer.jsx'
+import { MainRoutes } from './Project/MainRoutes';
 export const App =()=>{
     return (
         <>
         
-<GoogleTimer />
+<MainRoutes />
         </>
     )
 }
